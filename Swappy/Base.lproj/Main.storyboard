@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l4-oD-vae">
-                                <rect key="frame" x="213" y="150" width="175" height="60"/>
+                                <rect key="frame" x="213" y="114" width="175" height="60"/>
                                 <string key="text">Mix friends faces
 just in one click</string>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
@@ -26,7 +26,7 @@ just in one click</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loe-Oq-63Q">
-                                <rect key="frame" x="220" y="290" width="160" height="40"/>
+                                <rect key="frame" x="220" y="224" width="160" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="NLV-Nc-b7Z"/>
                                     <constraint firstAttribute="height" constant="40" id="PaT-QN-x1Z"/>
@@ -52,28 +52,15 @@ just in one click</string>
                                 </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example_friends" translatesAutoresizingMaskIntoConstraints="NO" id="Grs-yD-wbR">
-                                <rect key="frame" x="180" y="370" width="240" height="128"/>
+                                <rect key="frame" x="180" y="304" width="240" height="128"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Nkn-qo-0SF"/>
                                     <constraint firstAttribute="width" constant="240" id="Oqd-2E-dcR"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehv-3G-FnF">
-                                <rect key="frame" x="320" y="506" width="100" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="xuZ-FY-LVB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Example 2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tryExample2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7F-tK-f3b"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5J-Wj-JxK">
-                                <rect key="frame" x="180.5" y="506" width="100" height="29"/>
+                                <rect key="frame" x="180.5" y="440" width="100" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="QTx-4D-PwP"/>
                                 </constraints>
@@ -85,6 +72,19 @@ just in one click</string>
                                     <action selector="tryExampleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ZG-TT-8mr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehv-3G-FnF">
+                                <rect key="frame" x="320" y="440" width="100" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xuZ-FY-LVB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Example 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tryExample2ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7F-tK-f3b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -92,15 +92,59 @@ just in one click</string>
                             <constraint firstItem="Ehv-3G-FnF" firstAttribute="top" secondItem="Grs-yD-wbR" secondAttribute="bottom" constant="8" id="3XB-rb-UEb"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="8l4-oD-vae" secondAttribute="trailing" id="3yG-uy-vwm"/>
                             <constraint firstItem="8l4-oD-vae" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4YT-nl-82m"/>
-                            <constraint firstItem="loe-Oq-63Q" firstAttribute="centerX" secondItem="Grs-yD-wbR" secondAttribute="centerX" constant="-0.5" id="4aL-CK-LYk"/>
-                            <constraint firstItem="loe-Oq-63Q" firstAttribute="top" secondItem="8l4-oD-vae" secondAttribute="bottom" constant="80" id="ASJ-In-uyA"/>
+                            <constraint firstItem="loe-Oq-63Q" firstAttribute="centerX" secondItem="Grs-yD-wbR" secondAttribute="centerX" constant="-0.5" id="4aL-CK-LYk">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="loe-Oq-63Q" firstAttribute="top" secondItem="8l4-oD-vae" secondAttribute="bottom" constant="20" id="4iJ-wO-klk"/>
+                            <constraint firstItem="Ehv-3G-FnF" firstAttribute="leading" secondItem="Grs-yD-wbR" secondAttribute="trailing" constant="8" id="5Rp-fX-CWZ"/>
+                            <constraint firstItem="loe-Oq-63Q" firstAttribute="top" secondItem="8l4-oD-vae" secondAttribute="bottom" constant="50" id="ASJ-In-uyA"/>
                             <constraint firstItem="h5J-Wj-JxK" firstAttribute="top" secondItem="Grs-yD-wbR" secondAttribute="bottom" constant="8" id="DEr-vh-eKl"/>
                             <constraint firstAttribute="centerX" secondItem="8l4-oD-vae" secondAttribute="centerX" id="DtP-FV-WN6"/>
                             <constraint firstItem="Grs-yD-wbR" firstAttribute="trailing" secondItem="Ehv-3G-FnF" secondAttribute="trailing" id="VQW-3O-9W4"/>
                             <constraint firstItem="Grs-yD-wbR" firstAttribute="top" secondItem="loe-Oq-63Q" secondAttribute="bottom" constant="40" id="VXi-jp-JgL"/>
-                            <constraint firstAttribute="centerY" secondItem="8l4-oD-vae" secondAttribute="centerY" constant="120" id="YeI-55-Mac"/>
+                            <constraint firstAttribute="centerY" secondItem="8l4-oD-vae" secondAttribute="centerY" constant="180" id="YeI-55-Mac"/>
+                            <constraint firstItem="Grs-yD-wbR" firstAttribute="leading" secondItem="h5J-Wj-JxK" secondAttribute="trailing" constant="8" id="bd1-Lu-VdZ"/>
+                            <constraint firstItem="8l4-oD-vae" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="dK2-2q-u7e"/>
+                            <constraint firstItem="Grs-yD-wbR" firstAttribute="top" secondItem="loe-Oq-63Q" secondAttribute="bottom" constant="40" id="gqI-Og-oyt">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="8l4-oD-vae" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="keQ-xO-0eu"/>
                             <constraint firstItem="h5J-Wj-JxK" firstAttribute="leading" secondItem="Grs-yD-wbR" secondAttribute="leading" id="pPi-qI-qQ5"/>
+                            <constraint firstItem="h5J-Wj-JxK" firstAttribute="centerY" secondItem="Grs-yD-wbR" secondAttribute="centerY" constant="-0.5" id="qaT-Yt-fmw">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Grs-yD-wbR" firstAttribute="centerY" secondItem="Ehv-3G-FnF" secondAttribute="centerY" constant="0.5" id="yWl-hh-99q"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YeI-55-Mac"/>
+                                <exclude reference="keQ-xO-0eu"/>
+                                <exclude reference="4iJ-wO-klk"/>
+                                <exclude reference="bd1-Lu-VdZ"/>
+                                <exclude reference="gqI-Og-oyt"/>
+                                <exclude reference="yWl-hh-99q"/>
+                                <exclude reference="qaT-Yt-fmw"/>
+                                <exclude reference="5Rp-fX-CWZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="dK2-2q-u7e"/>
+                                <include reference="keQ-xO-0eu"/>
+                                <include reference="4iJ-wO-klk"/>
+                                <exclude reference="ASJ-In-uyA"/>
+                                <exclude reference="VQW-3O-9W4"/>
+                                <exclude reference="VXi-jp-JgL"/>
+                                <include reference="bd1-Lu-VdZ"/>
+                                <include reference="gqI-Og-oyt"/>
+                                <include reference="yWl-hh-99q"/>
+                                <exclude reference="DEr-vh-eKl"/>
+                                <exclude reference="pPi-qI-qQ5"/>
+                                <include reference="qaT-Yt-fmw"/>
+                                <exclude reference="3XB-rb-UEb"/>
+                                <include reference="5Rp-fX-CWZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="15H-5q-txh"/>
                     <connections>
