@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        KairosSDK.initWithAppId("2b592d4d", appKey: "a2efa358583c52f16cd5933bd5872837")
+        SVProgressHUD.setDefaultMaskType(.Gradient)
         return true
     }
 
